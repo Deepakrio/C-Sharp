@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task21
+namespace Concepts
 {
     public class Ternary_brk_cnt
     {

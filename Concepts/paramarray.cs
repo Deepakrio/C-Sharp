@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//Task Assigned During Class Hours (params Array) 
-namespace task22
+namespace Concepts
 {
-public class parr
+    public class paramarray
     {
         public static void paramarray (params int[] arr)
         {

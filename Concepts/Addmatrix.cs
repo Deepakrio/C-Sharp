@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace task22
+namespace Concepts
 {
     //  Write a program to perform matrix addition using 2D Arrays.
     public class Addmatrix

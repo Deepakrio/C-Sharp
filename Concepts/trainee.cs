@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task21
+namespace Concepts
 {
     //creating a class trainee
     public class trainee

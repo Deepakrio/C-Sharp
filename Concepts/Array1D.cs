@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace task22
+namespace Concepts
 {
     /// <summary>
     /// . Write a program to calculate the sum of naturals numbers using 1D Array
     /// (get the size of the array and input from the user).
     /// </summary>
-    
+
     public class Array1D
     {
         public static void Main()
