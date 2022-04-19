@@ -4,16 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Write a program to perform sum of natural numbers using params array.
+
 namespace Concepts
 {
-    public class paramarray
+public class paramarray
     {
-        public static void paramarray (params int[] arr)
+        public static void paramsarray (params int[] arr)
         {
-            foreach(int i in arr)
+            int sum = 0;
+
+            for (int i=0; i<arr.Length; i++)
             {
-                Console.Write(i +" ");
+                sum += arr[i];
+                
             }
+            Console.WriteLine("Sum of natural numbers is {0}",sum);
+
         }
 
         public static void Main()
@@ -31,7 +38,7 @@ namespace Concepts
                 num[i] = Convert.ToInt32(Console.ReadLine());
             }
             Console.WriteLine();
-            paramarray(num);
+            paramsarray(num);
             Console.Write("\n\n");
 
 
