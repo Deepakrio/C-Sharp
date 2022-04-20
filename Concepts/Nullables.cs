@@ -29,7 +29,7 @@ namespace Concepts
             Console.WriteLine("Balance Amt    : {0}",balance);
             Console.WriteLine("Intrest gained : {0}",intrest);
             
-            //Declaring variables for Coalescing usage
+            //Declaring and initializing variables for Coalescing usage
             int ID = 1;
             float BALANCE = 100000.50f;
             double INTREST = 3400.00;
