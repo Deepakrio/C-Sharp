@@ -8,19 +8,25 @@ using System.Threading.Tasks;
 
 namespace Concepts
 {
+    //creating interface
     public interface Iinterface1
     {
+        //declaring method area
         public void area();
     }
 
+    //Creating interface
     public interface Iinterface2
     {
+        //declaring method perimeter
         public void perimeter();
 
     }
 
+    //creating a class triangle and implementing interfaces to achive multiple inheritance
     public class triangle : Iinterface1, Iinterface2
     {
+       //Defining method area and calculating area of a triangle
         void Iinterface1.area()
         {
             int b = 0, h = 0;
@@ -38,6 +44,7 @@ namespace Concepts
             Console.WriteLine("\nArea of a Triangle is {0}      : ", result);
         }
 
+        //Defining method perimeter and calculating perimeter of a triangle
         void Iinterface2.perimeter()
         {
             int a = 0, b = 0, c = 0;
@@ -60,6 +67,7 @@ namespace Concepts
 
     public class circle : Iinterface1, Iinterface2
     {
+        //Defining method area and calculating area of a circle
         void Iinterface1.area()
         {
             int r = 0;
@@ -74,6 +82,7 @@ namespace Concepts
 
         }
 
+        //Defining method perimeter and calculating perimeter of a circle
         void Iinterface2.perimeter()
         {
             int r = 0;
@@ -91,6 +100,7 @@ namespace Concepts
 
     public class rectangle : Iinterface1, Iinterface2
     {
+        //Defining method area and calculating area of a rectangle
         void Iinterface1.area()
         {
             int l = 0, w = 0;
@@ -107,6 +117,7 @@ namespace Concepts
             Console.WriteLine("Area of a Rectangle is : {0}", result);
         }
 
+        //Defining method perimeter and calculating perimeter of a rectangle
         void Iinterface2.perimeter()
         {
             int l = 0, w = 0;
@@ -126,6 +137,7 @@ namespace Concepts
 
     public class Square : Iinterface1, Iinterface2
     {
+        //Defining method area and calculating area of a square
         void Iinterface1.area()
         {
             int a, result;
@@ -138,6 +150,7 @@ namespace Concepts
 
         }
 
+        //Defining method perimeter and calculating perimeter of a square
         void Iinterface2.perimeter()
         {
 
@@ -154,6 +167,7 @@ namespace Concepts
     }
     public class Geometry
     {
+        //Main method
         public static void Main()
         {
             int opt;
@@ -170,6 +184,7 @@ namespace Concepts
                 {
 
                     case 1:
+                        //Creating instance for triangle
                         Iinterface1 t = new triangle();
                         t.area();
                         Console.WriteLine();
@@ -180,6 +195,7 @@ namespace Concepts
                         break;
 
                     case 2:
+                        //Creating instance for circle
                         Iinterface1 c = new circle();
                         c.area();
                         Console.WriteLine();
@@ -190,6 +206,7 @@ namespace Concepts
                         break;
 
                     case 3:
+                        //Creating instance for rectangle
                         Iinterface1 r = new rectangle();
                         r.area();
                         Console.WriteLine();
@@ -200,6 +217,7 @@ namespace Concepts
                         break;
 
                     case 4:
+                        //Creating instance for square
                         Iinterface1 s = new Square();
                         s.area();
                         Console.WriteLine();
@@ -210,6 +228,7 @@ namespace Concepts
                         break;
 
                     default:
+                        //Default message
                         Console.WriteLine("Invalid Option");
                         Console.WriteLine("Try Again? [Y/N] : ");
                         rep = Convert.ToChar(Console.ReadLine());
