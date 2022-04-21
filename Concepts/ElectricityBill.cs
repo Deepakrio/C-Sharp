@@ -9,24 +9,30 @@ using System.Threading.Tasks;
 namespace Concepts
 {
 
+
+//creating abstract class
  public abstract class ElectricityBill
     {
+        //creating abstract methods
         public abstract void calcbill();
         public abstract void display();
 
 
     }
 
-
+    //Inheriting abstract class
     public class Ebill : ElectricityBill
     {
+        //Declaring variables
         int cost = 0, units = 0, charge = 0, due = 0, temp=0;
         int custID;
         string custName;
+
+        //Overriding abstract methods
         public override void calcbill()
         {
             
-
+            //Getting data from the user
             Console.WriteLine("Enter Customer ID");
             custID = Convert.ToInt32(Console.ReadLine());
 
@@ -36,6 +42,7 @@ namespace Concepts
             Console.WriteLine("Enter units used");
             units = Convert.ToInt32(Console.ReadLine());
 
+            //logic - to calculate bill based on the usage
             if(units <= 100)
             {
                 charge = 1;
@@ -64,12 +71,14 @@ namespace Concepts
                 cost = 600 + charge + due;
             }
 
+            //Getting due amount
             Console.WriteLine("Enter due amount");
             due = Convert.ToInt32(Console.ReadLine());
             
 
         }
 
+        //Overriding display method
         public override void display()
         {
             Console.WriteLine("****************ELECTRICITY BILL MONTH:APRIL******************");
@@ -90,9 +99,13 @@ namespace Concepts
 
     public class bill
     {
+        //Main method
         public static void Main()
         {
+            //Creating instance
             Ebill eb = new Ebill();
+
+            //invoking methods
             eb.calcbill();
             eb.display();
         }
