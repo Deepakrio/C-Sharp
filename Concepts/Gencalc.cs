@@ -15,7 +15,7 @@ namespace Concepts
             ///<summary>
             ///We cannot use operators like +,-,*,/ on a generic type (T)
             ///so we have created dynamic type variables and assigned generic values in it
-            ///and we have performed operations in dynamic type variable
+            ///and we have performed operations on dynamic type variable
             ///</summary>
             dynamic num1 = a;
             dynamic num2 = b;
@@ -155,9 +155,6 @@ namespace Concepts
 
 
                 }
-
-
-
 
             }
         }
